@@ -5,7 +5,7 @@ let angulo3 = 72;
 
 let sum = angulo1 + angulo2 + angulo3;
 
-if (sum === 180) {
+if (sum === 180 && ((angulo1 !== 0 && angulo2 !== 0) || (angulo2 !== 0 && angulo3 !== 0) || (angulo1 !== 0 && angulo3 !== 0))) {
     console.log("triangle is valid")
     if (angulo1 < 90 && angulo2 < 90 && angulo3 < 90) {
 
@@ -25,3 +25,4 @@ if (sum === 180) {
 } else {
     console.log("triangle is not valid")
 }
+

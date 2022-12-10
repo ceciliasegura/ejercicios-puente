@@ -1,15 +1,5 @@
-let str = "Capitalize";
+let str = "CapiTalize";
 
-let result = "";
-
-for( let i = 0; i <= str.length - 1; i++){
-    if( i === 0){
-       result = result + str[i].toLowerCase();
-    }else if(i == str.length - 1){
-        result = result + str[i].toUpperCase();
-    }else{
-        result = result + str[i]
-    }
-}
+let result = str.slice(0, 1).toLowerCase() + str.slice(1, str.length - 1) + str[str.length - 1].toUpperCase();
 
 console.log(result)
